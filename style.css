@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{text-decoration: none}
+blockquote{font-style: italic}
+code{background-color: #eee; color: #000; padding: 0.4em;}
+
+section{
+    width: 100%;
+}
+
+.right{
+    float: right;
+    margin-left: 20px;
+}
+
+.left{
+    float: left;
+    margin-right: 20px;
+}
+
+section div{
+    padding: 2em;
+    overflow: hidden;
+    width: 980px;
+    margin: auto;
+}
+.violet{
+    background-color: #5955a9;
+    color: #fff;
+}
+
+.violet a, .violet a:visited{
+    color: #ccc;
+}
+
+.white{
+    color: #000;
+    background-color: #fff;
+}
+
+.white a{
+    color: #5955a9;
+}
+
+.black{
+    background-color: #000;
+    color: #fff;
+}
+
+.gray{
+    background-color: #ddd;
+    color: #000;
+}
+
+.black a, .gray a{
+    color: #5955a9;
+}
+
+.code{
+    font-family: Courier;
+    font-size: 5em;
+    text-align: center;
+}
