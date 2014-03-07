@@ -2,12 +2,23 @@
 <html>
 <head>
   <title>Emacs is sexy</title>
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <meta charset="UTF-8">
 </head>
 <body>
-<img src="img/emacs-title.png" alt="Emacs is sexy!"/>
+  <div id="header">
+    <img src="img/emacs-title.png" alt="Emacs is sexy!"/>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#installing" title="Installing Emacs">Installing Emacs</a></li>
+        <li>Why Emacs?</li>
+        <li><a href="#learn" title="Learn Emacs">Learn Emacs</a></li>
+        <li><a href="#resources" title="Resources">Resources</a></li>
+        <li><a href="#be-free" title="Be free">Be free</a></li>
+      </ul>
+    </nav>
+  </div>
 <section id="description" class="violet">
   <div>
     <img src="img/emacs.png" alt="Emacs" class="right"/>
@@ -22,10 +33,13 @@
       Tron Legacy">featured in Tron Legacy</a>, it is sexy! (and
       awesome).
     </p>
-  </div>
-</section>
-<section id="free" class="black">
-  <div>
+    <p>
+      You can use Emacs for all of your text processing
+      needs, internet and social network interactions, hacking,
+      coding, managing to-do's and organizing your daily schedule,
+      play tetris and even provide you with free psychotherapy and
+      counseling with <code>M-x doctor</code>.
+    </p>
     <p>
       <img src="img/emacs-logo.png" alt="Emacs" class="left" />
       GNU Emacs is <strong>Free Software</strong>, free as in beer and
@@ -41,7 +55,7 @@
     </p>
   </div>
 </section>
-<section id="get-started" class="white">
+<section id="installing" class="white">
   <div>
     <h2>Installing Emacs</h2>
     <img src="img/emacs-icon.png" alt="Install Emacs" class="right">
@@ -77,7 +91,7 @@
 <section id="learn" class="gray">
   <div>
     <h2>Learn Emacs</h2>
-      <blockquote>Mastering Emacs is not the goal, it's the path.<br>
+    <blockquote>Mastering Emacs is not the goal, it's the path.<br>
       - Me</blockquote>
     <p>
       It's not called the <em> self-documenting real-time display
@@ -101,9 +115,58 @@
     </p>
   </div>
 </section>
+<section id="resources" class="violet">
+  <div>
+    <h2>Resources</h2>
+    <p>
+      Emacs is used by very happy hackers around the globe. Lots of
+      them are willing to help you get started or share the path
+      they've walked along Emacs with you. It's dangerous to go alone,
+      take this:
+    </p>
+    <ul>
+      <li>
+        <a href="http://www.masteringemacs.org/" title="Mastering
+      Emacs">Mastering Emacs</a> - A blog about mastering the world's
+      best text editor.
+      </li>
+      <li>
+        <a href="http://emacsrocks.com/" title="Emacs Rocks">Emacs
+        Rocks</a> - a series of videos teaching about Emacs. Includes
+        a series on extending it.
+      </li>
+      <li>
+        <a href="http://whattheemacsd.com/" title="What the
+        .emacs.d!?">What the .emacs.d!?</a> - Blog from the same
+        author as Emacs Rocks, about setting up your .emacs.d.
+      </li>
+      <li>
+        <a href="http://emacsmovies.org/" title="Emacs Movies">Emacs
+        Movies</a> - Tutorial screencasts for Emacs.
+      </li>
+      <li>
+        <a href="http://reddit.com/r/emacs" title="Emacs
+        Subreddit">/r/emacs</a> - Reddit is a virtual community of
+        (generally) very nice people. You can create an account there
+        and share your questions, progress and snippets about Emacs on
+        the Emacs subreddit.
+      </li>
+    </ul>
+  </div>
+</section>
 <section id="be-free" class="black">
   <div class="code">
     be free.
   </div>
 </section>
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+</script>
 </body>
+<!-- Ctrl X Ctrl C -->

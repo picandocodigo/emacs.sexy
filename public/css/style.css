@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 
-a{text-decoration: none}
+a{color: #5955a9; text-decoration: none; font-weight: bold}
 blockquote{font-style: italic}
 code{background-color: #eee; color: #000; padding: 0.4em;}
 
@@ -19,6 +19,29 @@ section{
 .left{
     float: left;
     margin-right: 20px;
+}
+
+#header{
+    overflow: hidden;
+}
+
+#main-nav{
+    float: right;
+    margin: 2em;
+}
+
+#main-nav ul li{
+    display: inline;
+    list-style: none;
+    margin-right: 1.5em;
+}
+
+#main-nav ul li a{
+}
+
+#main-nav ul li a:hover{
+    background: #5955a9;
+    color: #fff;
 }
 
 section div{
