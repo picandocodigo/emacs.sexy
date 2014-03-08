@@ -1,6 +1,9 @@
+@import url('fonts/Open Sans/stylesheet.css');
+
 body{
     margin: 0;
     padding: 0;
+    font-family: "Open Sans";
 }
 
 a{color: #5955a9; text-decoration: none; font-weight: bold}
