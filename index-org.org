@@ -1,0 +1,152 @@
+#+TITLE:     Emacs is sexy
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css"/> <link rel="icon" type="image/png" href="img/favicon.png">
+
+#+BEGIN_HTML
+<div id="header">
+  <img src="img/emacs-title.png" alt="Emacs is sexy!"/>
+  <nav id="main-nav">
+    <ul>
+      <li><a href="#installing" title="Installing Emacs">Installing Emacs</a></li>
+      <li>Why Emacs?</li>
+      <li><a href="#learn" title="Learn Emacs">Learn Emacs</a></li>
+      <li><a href="#resources" title="Resources">Resources</a></li>
+      <li><a href="#be-free" title="Be free">Be free</a></li>
+    </ul>
+  </nav>
+</div>
+#+END_HTML
+
+* setup                                                                               :noexport:
+#+begin_src emacs-lisp :exports results :results silent
+(setq org-html-validation-link nil)
+(setq org-html-postamble nil)
+(setq org-html-style-default nil)
+(setq org-html-head-include-scripts nil)
+#+end_src
+
+
+* Description
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: violet
+:END:
+
+#+HTML: <img src="img/emacs.png" alt="Emacs" class="right"/>
+
+Emacs is a *text editor* which you can customize and extend in so many
+ways. It was written in *Lisp*, the language from which /the Gods
+wrought the universe/.
+
+There's a reason why Emacs was [[http://jtnimoy.net/workviewer.php?q%3D178][featured in Tron Legacy]], it is sexy!
+(and awesome).
+
+You can use Emacs for all of your text processing needs, internet and
+social network interactions, hacking, coding, managing to-do's and
+organizing your daily schedule, play Tetris and it can even provide
+you with free psychotherapy and counseling using =M-x doctor=.
+
+#+HTML: <img src="img/emacs-logo.png" alt="Emacs" class="left" />
+
+GNU Emacs is *Free Software*, free as in beer and free as in free
+speech. The original Emacs was written by /St. iGNUcius himself/ -
+*Richard Stallman*.
+
+Not only does it give the user the [[https://www.gnu.org/philosophy/free-sw.html][four essential freedoms]], its
+architecture is built in such a way that you have the power to mold
+it, change it and make it comply to your computering needs.
+* Installing Emacs
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: white
+:CUSTOM_ID: installing
+:END:
+#+HTML: <img src="img/emacs-icon.png" alt="Install Emacs" class="right">
+You can install Emacs on almost every operative system out there. The
+officially supported systems are GNU, GNU/Linux, FreeBSD, NetBSD,
+OpenBSD, Mac OS X, MS Windows and Solaris.
+
+** GNU/Linux
+GNU Emacs is available on most GNU/Linux distributions. It's
+available out of the box on some of them. If it's not, you can
+use your system's package manager (apt, yum, pacman, etc.)
+or [[http://gnu.c3sl.ufpr.br/ftp/emacs/][download Emacs from the GNU site]].
+
+** Windows
+You can download Emacs for Windows
+from [[http://gnu.c3sl.ufpr.br/ftp/emacs/windows/][the GNU servers]].
+
+** Mac OS X
+Emacs is included in Mac OS X, so you can just use Terminal.app, type
+=emacs= and you're ready to roll. It's a very old version though, and
+it's recommended that you use the latest stable version which is
+Emacs 24.
+
+There are various ways to install the latest Emacs on Mac OS X:
+
+ * Download [[http://emacsformacosx.com/][Emacs for Mac OS X]].
+ * Install using Homebrew.
+ * [[https://github.com/railwaycat/emacs-mac-port][Emacs Mac Port]].
+
+More info [[http://www.emacswiki.org/emacs/EmacsForMacOS][here]].
+
+* Learn Emacs
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: gray
+:CUSTOM_ID: learn
+:END:
+
+#+BEGIN_QUOTE
+    Mastering Emacs is not the goal, it's the path.
+      - A happy Emacs user
+#+END_QUOTE
+
+It's not called the /self-documenting real-time display editor/ for
+nothing. Emacs includes a great tutorial to *teach you how to use
+Emacs while you're using Emacs*.  Mind blown? This is just the
+beginning.
+
+Once you've installed Emacs, start it up. You will be greeted with a
+welcome screen. From there you can click on the /Emacs Tutorial/ link
+with your mouse.
+
+ *Instead of using your mouse*, you can press =Alt + X= on your
+keyboard, which will take you to the /command mode/ on the lower
+screen of Emacs. Then write =help-with-tutorial= and press Enter. You
+just entered the first of many Emacs commands. You know the warm
+fuzzies you just got? Get used to it, because there's more where that
+came from.
+
+This interactive tutorial will teach you the basics on how to move
+around and edit text. It's just the tip of the iceberg, and your quest
+has just begun.
+
+* Resources
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: violet
+:CUSTOM_ID: resources
+:END:
+
+Emacs is used by very happy hackers all around the globe. Lots of them
+are willing to help you get started or share the path they've walked
+along Emacs with you. It's dangerous to go alone; take this:
+
+ * [[http://www.gnu.org/software/emacs/manual/html_node/emacs/index.html][The Emacs Manual]] - Official GNU Emacs manual. See more manuals
+   [[http://www.gnu.org/software/emacs/manual/][here]].
+ * [[http://www.masteringemacs.org/][Mastering Emacs]] - A blog about mastering the world's best text
+   editor.
+ * [[http://emacsrocks.com/][Emacs Rocks]] - a series of videos teaching about Emacs. Includes a
+   series on extending it.
+ * [[http://whattheemacsd.com/][What the .emacs.d!?]] - Blog from the same author as Emacs Rocks,
+   about setting up your .emacs.d.
+ * [[http://emacsmovies.org/][Emacs Movies]] - Tutorial screencasts for Emacs.
+ * [[http://reddit.com/r/emacs][/r/emacs]] - Reddit is a virtual community of (generally) very
+   nice people. You can create an account there and share your
+   questions, progress and snippets about Emacs on the Emacs
+   subreddit.
+
+* Be free
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: black
+:CUSTOM_ID: be-free
+:END:
+be free.
