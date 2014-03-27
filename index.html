@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Emacs is sexy</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-  <link rel="icon" type="image/png" href="img/favicon.png">
-  <meta charset="UTF-8">
-</head>
-<body>
+---
+layout: default
+title: Emacs is sexy
+---
   <div id="header">
     <img src="img/emacs-title.png" alt="Emacs is sexy!"/>
     <nav id="main-nav">
@@ -69,7 +64,9 @@
       You can <a href="http://bzg.fr/emacs-strip-tease.html">strip it</a>,
       choose between several themes with <code>M-x
       load-theme</code>, download one from another happy Emacs
-      user or create your own.
+      user or create your
+      own. <a href="http://emacsthemes.caisah.info/" title="Emacs
+      Themes">Here's a nice gallery of themes</a>.
     </p>
     <h3>Et tu, Programmer?</h3>
     <p>
@@ -283,32 +280,3 @@
     be free.
   </div>
 </section>
-<section id="footer" class="violet">
-  <div>
-    Website created
-    by <a href="http://picandocodigo.net">picandocodigo</a>. This is a
-    work in progress, please help me improve it by forking
-    it <a href="https://github.com/picandocodigo/emacs.sexy">on
-    GitHub</a>.
-  </div>
-</section>
-<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$('#main-nav a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    return false;
-});
-</script>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-2107177-12', 'emacs.sexy');
-  ga('send', 'pageview');
-</script>
-</body>
-<!-- Ctrl X Ctrl S -->
-<!-- Ctrl X Ctrl C -->
