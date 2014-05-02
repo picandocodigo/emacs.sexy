@@ -1,0 +1,242 @@
+/* ################################################
+             	   Colors
+################################################# */
+
+$white: #ffffff;
+
+$black:#000000;
+
+$green: #1cbbb4;
+
+$lightGreen: #d7f8f7;
+
+$lightGrey: #f6f6f6;
+
+$darkGrey: #333333;
+
+$blue: #172d4f;
+
+$lightBlue: #dadee5;
+
+/* ################################################
+             	   Mixins
+################################################# */
+
+@mixin x {
+}
+/* ################################################
+                General Settings
+################################################# */
+
+@import url('fonts/Open Sans/stylesheet.css');
+
+a {
+    color:$green;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.noMarginLeft {
+    margin-left: 0 !important;
+}
+
+.noMarginRight {
+    margin-right: 0 !important;
+}
+
+.noMarginTop {
+    margin-top: 0 !important;
+}
+
+.noMarginBottom {
+    margin-bottom: 0 !important;
+}
+.hideElement {
+    display:none;
+}
+
+
+/* ################################################
+                    Page Layout
+################################################# */
+
+body {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-family: "Open Sans";
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 0;
+}
+code {
+    background-color: #eee; 
+    color: $black; 
+    padding: 0.4em;
+}
+blockquote {
+    font-style: italic;
+    width: 100%;
+    background-color: $white;
+    border: 1px solid $lightGrey;
+    text-align: center;
+    margin: 0;
+    padding: 2em 0;
+    b {
+        width: 100%;
+        display: block;
+    }
+    &.quote {
+        background-color: $lightGrey;
+        img, p {
+            margin: 1em auto;
+            display: block;
+        }
+    }
+}
+.col {
+    width: 50%;
+    padding: 0 5%;
+    display: table-cell;
+}
+nav#nav-container{
+    background-color:$lightGrey;
+    border-bottom: 1px solid #d7dddd;
+    text-align: center;
+    height: 90px;
+    z-index: 9999; 
+    position: fixed; 
+    left: 0; top: 0; 
+    width: 100%; 
+    padding: 0 5%;
+    img {
+        display:block;
+        float: left;
+    }
+    ul {
+        float:right;
+        margin: 1.6em 0;
+        li {
+            display: inline;
+            list-style: none;
+            padding-left: 1.5em;
+            font-size: 0.8em;
+            font-weight: lighter;
+            a {
+                color: $black;
+                &:hover{
+                    color: #1cbbb4;
+                }
+            }
+        }
+    }
+}
+main {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 90px;
+  left: 0;
+}
+section {
+    width: 100%;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #d7dddd;
+
+    & > span {
+    position: relative;
+    top: -90px;
+    display: block;
+    width: 1px;
+    height: 1px;
+    }
+    div {
+        padding: 4em 5%;
+        overflow: hidden;
+        width: 100%;
+        margin: auto;
+    }
+    &.lightGreen {
+        background-color: $lightGreen;
+    }
+    &.lightBlue {
+        background-color: $lightBlue;
+    }
+    &.darkGrey {
+        background-color: $darkGrey;
+        color: $white;
+        border-bottom: 1px solid $darkGrey;
+    }
+    
+    &.black {
+        background-color: $black;
+        color: $white;
+    }
+    &.green {
+        background-color: $green;
+        color: $white;
+        border-bottom: 1px solid $green;
+    }
+    li {
+        padding-bottom: 1em;
+    }
+    img.mobile {
+        display: none;
+    }
+}
+.right{
+    float: right;
+    margin-left: 20px;
+}
+
+.left{
+    float: left;
+    margin-right: 20px;
+}
+
+.howto{
+    display: block;
+    margin: 2em auto;
+    clear: both;
+    max-width: 600px;
+    width: 80%;
+}
+
+.code{
+    font-family: Courier;
+    font-size: 6em;
+    text-align: center;
+    padding: 2em 5%;
+    &.green {
+        background-color: $green;
+        color: $white;
+    }
+}
+
+#footer {
+    padding: 2em 0 0 0;
+    text-align: center;
+    div {
+        padding: 0 5% 3em;
+        text-align: center;
+        font-size: 0.8em
+    }
+    a {
+        color: #1cbbb4;
+    }
+}
