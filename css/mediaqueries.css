@@ -21,6 +21,10 @@
   section ul {
     padding-left: 0%;
     padding-right: 0%; }
+  section article {
+    width: 100%;
+    padding: 40px;
+    float: left; }
 
   .code {
     font-size: 4em;

@@ -91,21 +91,34 @@ code {
 blockquote {
     font-style: italic;
     width: 100%;
-    background-color: $white;
+    background-color: $lightGrey;
     border: 1px solid $lightGrey;
     text-align: center;
     margin: 0;
     padding: 2em 0;
+    float: left;
     b {
         width: 100%;
         display: block;
     }
     &.quote {
         background-color: $lightGrey;
+        float: none;
         img, p {
             margin: 1em auto;
             display: block;
         }
+        
+    }
+    img {
+            margin: 1em auto;
+            margin-bottom: 3em;
+            display: block;
+        }
+    article {
+        width: 50%;
+        padding: 40px; 
+        float: left;
     }
 }
 .col {
@@ -216,7 +229,36 @@ section {
     max-width: 600px;
     width: 80%;
 }
+.btn {
+    text-transform: uppercase;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #1cbbb4;
+    color: #1cbbb4;
+    background-color: transparent;
+    text-shadow:none;
+    margin-top: 30px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    font-style: normal;;
 
+    &:hover {
+        border: 1px solid #1cbbb4;
+        outline: 0;
+        color: #fff;
+        background-color: #1cbbb4;
+        text-decoration: none;
+    }
+}
 .code{
     font-family: Courier;
     font-size: 6em;
