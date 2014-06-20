@@ -59,19 +59,33 @@ code {
 blockquote {
   font-style: italic;
   width: 100%;
-  background-color: white;
+  background-color: #f6f6f6;
   border: 1px solid #f6f6f6;
   text-align: center;
   margin: 0;
-  padding: 2em 0; }
+  padding: 2em 0;
+  float: left; }
   blockquote b {
     width: 100%;
     display: block; }
   blockquote.quote {
-    background-color: #f6f6f6; }
+    background-color: #f6f6f6;
+    float: none; }
     blockquote.quote img, blockquote.quote p {
       margin: 1em auto;
       display: block; }
+  blockquote img {
+    margin: 1em auto;
+    margin-bottom: 3em;
+    display: block; }
+  blockquote article {
+    width: 50%;
+    padding: 40px;
+    float: left; }
+    blockquote article.icon1 {
+      background-image: url(../img/emacs-icon.png) no-repeat center top; }
+    blockquote article.icon2 {
+      background-image: url(../img/emacs-icon2.png) no-repeat center top; }
 
 .col {
   width: 50%;
@@ -163,6 +177,34 @@ section {
   clear: both;
   max-width: 600px;
   width: 80%; }
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid #1cbbb4;
+  color: #1cbbb4;
+  background-color: transparent;
+  text-shadow: none;
+  margin-top: 30px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+  font-style: normal; }
+  .btn:hover {
+    border: 1px solid #1cbbb4;
+    outline: 0;
+    color: #fff;
+    background-color: #1cbbb4;
+    text-decoration: none; }
 
 .code {
   font-family: Courier;
