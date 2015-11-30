@@ -224,3 +224,7 @@ section {
     font-size: 0.8em; }
   #footer a {
     color: #1cbbb4; }
+
+  .bullet li{
+    list-style-type: disc;
+}

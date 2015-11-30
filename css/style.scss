@@ -84,8 +84,8 @@ body {
     margin: 0;
 }
 code {
-    background-color: #eee; 
-    color: $black; 
+    background-color: #eee;
+    color: $black;
     padding: 0.4em;
 }
 blockquote {
@@ -108,7 +108,6 @@ blockquote {
             margin: 1em auto;
             display: block;
         }
-        
     }
     img {
             margin: 1em auto;
@@ -117,7 +116,7 @@ blockquote {
         }
     article {
         width: 50%;
-        padding: 40px; 
+        padding: 40px;
         float: left;
     }
 }
@@ -131,10 +130,10 @@ nav#nav-container{
     border-bottom: 1px solid #d7dddd;
     text-align: center;
     height: 90px;
-    z-index: 9999; 
-    position: fixed; 
-    left: 0; top: 0; 
-    width: 100%; 
+    z-index: 9999;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
     padding: 0 5%;
     img {
         display:block;
@@ -195,7 +194,7 @@ section {
         color: $white;
         border-bottom: 1px solid $darkGrey;
     }
-    
+
     &.black {
         background-color: $black;
         color: $white;
@@ -281,4 +280,8 @@ section {
     a {
         color: #1cbbb4;
     }
+}
+
+.bullet li{
+    list-style-type: disc;
 }
