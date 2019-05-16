@@ -1,0 +1,48 @@
+/* ################################################
+                        768px
+################################################# */
+
+@media only screen and (max-width: 767px) {
+    nav#nav-container{
+        img {
+            float: none;
+            margin: 0 auto;
+            position: relative;
+        }
+        ul {
+            display: none;
+        }
+    }
+    section {
+        div {
+            padding: 3em 10% 4em;
+        }
+        img.web {
+            display: none;
+        }
+        img.mobile {
+            display: block;
+
+            margin: 0 auto;
+            position: relative;
+            max-width: 100%;
+        }
+        ul {
+            padding-left: 0%;
+            padding-right: 0%; 
+        }
+        article {
+        width: 100%;
+        padding: 40px; 
+        float: left;
+    }
+    }
+    .code {
+        font-size: 4em;
+        line-height: 5em;
+    }
+    blockquote {
+        padding: 2em 10%;
+    }
+
+}

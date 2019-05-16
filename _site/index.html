@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Emacs is sexy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+  </head>
+  <body>
+      <!--header  class="">
+        <img src="img/emacs-title-new.png" alt="Emacs is sexy!"/>
+      </header-->
+      <nav id="nav-container">
+        <img src="img/emacs-title-new2_@2X.png" alt="Emacs is sexy!"/>
+        <ul>
+          <li><a href="#description" title="Description">Description</a></li>
+          <li><a href="#_why" title="Why Emacs?">Why Emacs?</a></li>
+          <li><a href="#installing" title="Installing Emacs">Installing Emacs</a></li>
+          <li><a href="#learn" title="Learn Emacs">Learn Emacs</a></li>
+          <li><a href="#resources" title="Resources">Resources</a></li>
+          <li><a href="#be-free" title="Be free">Be free</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section class="white">
+  <span id="description" ></span>
+  <div>
+    <img src="img/emacs.png" alt="Emacs" class="web right" />
+    <p>
+      Emacs is a <strong>highly extensible text editor</strong>. It is
+      built on a C core, and provides a fully
+      featured <strong>Lisp</strong> environment
+      (<a href="https://xkcd.com/224/">the language from which <em> the
+          Gods wrought the universe</em></a>).
+    </p>
+    <p>
+      There's a reason why Emacs was
+      <a href="http://jtnimoy.net/item.php?handle=14881671-tron-legacy" title="Emacs
+               on Tron Legacy">featured in Tron Legacy</a> - because it's sexy!
+    </p>
+    <img src="img/emacs.png" alt="Emacs" class="mobile"/>
+    <p>
+      You can use Emacs for all of your text processing needs,
+      internet and social network interactions, hacking, coding,
+      managing to-do's and organizing your daily schedule, playing
+      Tetris, and many other awesome things. It can even provide you
+      with free psychotherapy and counseling using the built
+      in <code>doctor</code>. A vibrant community of hackers is
+      constantly writing new extensions, thanks to the power of the
+      Emacs Lisp environment.
+    </p>
+    <p>
+      GNU Emacs is <strong>Free Software</strong>, both free as in free
+      beer and free as in free speech. The original Emacs was written
+      by <em>St. iGNUcius himself</em>&nbsp;&mdash; <strong>Richard
+      Stallman</strong>.
+    </p>
+    <p>
+      Not only does it give the user
+      the <a href="https://www.gnu.org/philosophy/free-sw.html">four
+      essential freedoms</a>, its architecture is built in such a way
+      that you have the power to mold it, change it and make it comply
+      to your computering needs.
+    </p>
+  </div>
+</section>
+<section class="lightGreen">
+  <span id="_why"></span>
+  <div>
+    <h2>Why use Emacs?</h2>  Emacs is a very powerful text processor,
+    giving you the power to manipulate documents quickly and
+    efficiently. You can easily move through and edit paragraphs,
+    sentences, words, and logical blocks; blaze through text using
+    powerful search tools; and easily edit thousands of lines at once
+    using regular expressions, keyboard macros and more.
+    <h3>Colorful text editor</h3>
+    <p>
+      Emacs can be customized in every conceivable way, including its
+      looks.  You
+      can <a href="http://bzg.fr/emacs-strip-tease.html">strip it
+      down</a>, choose between dozens of easy to install themes
+      with <code>M-x load-theme</code>, or even create your own and
+      share it with your friends. Here are a couple of nice theme galleries:
+      <a href="http://emacsthemes.com/" title="Emacs Themes">Emacs Themes</a>,
+      <a href="https://pawelbx.github.io/emacs-theme-gallery/" title="Emacs Theme Gallery">Emacs Theme Gallery</a>.
+    </p>
+    <h3>Et tu, Programmer?</h3>
+    <p>
+      There are tools for every programming language out there. Lisp,
+      Ruby, Python, PHP, Java, Erlang, JavaScript, C, C++, Prolog,
+      Tcl, AWK, PostScript, Clojure, Scala, Perl, Haskell, Elixir all
+      of these languages and more are supported in Emacs. Because of
+      the powerful Lisp core, Emacs is easy to extend to add support
+      for new languages if the urge strikes you.
+    </p>
+    <p>
+      You get lots of features out of the box, including syntax
+      highlighting, automatic indentation, REPL support, debugging,
+      code browsing, version control integration and much more.
+    </p>
+    <h3>Vim user?</h3>
+    <p>
+      Let me tell you about <a href="http://spacemacs.org/" title="Spacemacs">
+      Spacemacs</a>! Spacemacs is a community-driven Emacs distribution that
+      brings together the world of Vim and Emacs into one text editor. It also
+      features ergonomics and mnemonic key binding design, and also works great as a
+      starter pack for newcomers.
+    </p>
+    <p>
+      If you just want to use Vim inside Emacs, you can check out
+      <a href="https://github.com/emacs-evil/evil">Evil Mode</a>, an extensible
+      vi layer for Emacs that emulates the main features of Vim.
+    </p>
+    <h3>More!</h3>
+    <p>
+      <code><a href="http://orgmode.org/">Org mode</a></code> helps
+      you to keep notes, maintain TODO lists, plan projects and author
+      documents. You can use your Org documents to create HTML
+      websites like this one or export to LaTeX, Beamer, OpenDocuments
+      and many other formats.
+    </p>
+    <p>
+      <code>Tramp</code> allows you to edit remote files without
+      leaving Emacs. You can seamlessly edit files on remote servers
+      via SSH or FTP, edit local files with su/sudo, and much more.
+    </p>
+    <p>
+      <code>M-x butterfly</code> unleashes the powers of the
+      butterfly. <a href="https://xkcd.com/378/" target="_blank">The real
+      way of programming</a>.
+    </p>
+    <p>
+      Use the built in IRC client <code>ERC</code> along
+      with <code>BitlBee</code> to connect to your favorite chat
+      services, or use the Jabber package to hop on any XMPP service.
+    </p>
+    <p>
+      Out of the box Emacs includes a mail client, web browser,
+      calendar, and games; you can even edit video and images inside
+      Emacs. There
+      are <a href="http://tracker.endlessparentheses.com/"
+            title="Emacs archive tracker">more than 3,000</a> packages for
+      Emacs, and more are written all the time. You can easily extend
+      your Emacs with new packages
+      from <a href="http://elpa.gnu.org/">GNU
+      ELPA</a>, <a href="http://melpa.milkbox.net/">MELPA</a>
+      and <a href="http://marmalade-repo.org/">Marmelade</a>
+      repositories.
+    </p>
+  </div>
+</section>
+<section class="white">
+  <span id="installing"></span>
+  <div>
+    <h2>Installing Emacs</h2>
+    <p>
+      Emacs is easy to install on almost every operating system out
+      there. Officially supported systems include GNU/Linux,
+      Mac OS X, Microsoft Windows, GNU/Hurd, FreeBSD, NetBSD,
+      OpenBSD, and Solaris. You can check out <a
+  href="http://emacs.link/">Get Emacs</a> for simple, direct
+      installation directions for your system, or
+      read the following instructions:
+    </p>
+    <h3>GNU/Linux</h3>
+    <p>
+      GNU Emacs is available on every major GNU/Linux
+      distribution. It's available out of the box on several of them,
+      and if it's not you can install it with your system's package
+      manager or <a href="http://gnu.c3sl.ufpr.br/ftp/emacs/"
+  title="Download Emacs">download Emacs directly from GNU</a>.
+    </p>
+    <h3>Mac OS X</h3>
+    <p>
+      Emacs is included in Mac OS X, so you can just use Terminal.app,
+      type <code>emacs</code> and you're ready to roll. It's an old
+      version though, and it's recommended that you use the latest stable
+      version. To get the latest and greatest features, there are community built
+      packages like <a href="http://emacsformacosx.com/">Emacs For OS
+      X</a> or <a href="https://github.com/railwaycat/homebrew-emacsmacport"
+                  title="Emacs Mac Port">Homebrew</a> that are easy to install.
+    </p>
+    <p>
+      You can find more info about Emacs on OS
+      X <a href="http://www.emacswiki.org/emacs/EmacsForMacOS"
+      title="Emacs for Mac OS">here</a>.
+    </p>
+    <h3>Windows</h3>
+    <p>
+      Windows users can download Emacs for Windows
+      from <a href="http://gnu.c3sl.ufpr.br/ftp/emacs/windows/"
+      title="get Emacs for Windows">the GNU servers</a>.
+    </p>
+    <p>
+      There is
+      also <a href="https://www.gnu.org/software/emacs/manual/html_mono/efaq-w32.html">more
+      info on Emacs for Windows</a> on the GNU website.
+    </p>
+
+    <blockquote id="icons">
+      <h2>Download these alternative icons</h2>
+      <article>
+        <img src="img/emacs-icon.png">
+        <a href="img/emacsV1.iconset.zip" target="_blank" class="btn">Download</a>
+      </article>
+      <article>
+        <img src="img/emacs-icon2.png">
+        <a href="img/emacs.iconset.zip" class="btn"  >Download</a>
+      </article>
+    </blockquote>
+    </p>
+  </div>
+</section>
+<section class="lightBlue">
+  <span id="learn"></span>
+  <div>
+    <h2>Learn Emacs</h2>
+    <blockquote class="quote">
+      <b>"Mastering Emacs is not the goal, it's the path."</b>
+      A happy Emacs user
+    </blockquote>
+    <p>
+      It's not called the <em> self-documenting real-time display
+        editor</em> for nothing. Emacs includes a great tutorial to
+      <strong>teach you how to use Emacs while you're using
+        Emacs</strong>. Mind blown? This is just the beginning.
+    </p>
+    <p>
+      Once you've installed Emacs and started it up, you will be  greeted
+      with a welcome screen. From here you can click on
+      the <em>Emacs Tutorial</em> link with your mouse.
+    </p>
+    <p>
+      <strong>Or if you're the keyboard type</strong>, you can
+      press <code>Alt + X</code> on your keyboard, which will take you
+      to the <em>command mode</em> in the lower screen of Emacs. Type in
+      <code>help-with-tutorial</code> and press Enter. You just
+      entered the first of many Emacs commands. You know the warm
+      fuzzies you just got? Get used to it, because there's more where
+      that came from.
+    </p>
+    <p>
+      This interactive tutorial will teach you the basics on how to
+      move around and edit text. It's just the tip of the iceberg, and
+      your quest has just begun.
+    </p>
+    <p>
+      A great resource for starters is this visual guide to learning
+      Emacs by <a href="http://sachachua.com" title="How to Learn
+                                                     Emacs">Sacha Chua</a>, which she has kindly made available under
+      a <em><a href="https://creativecommons.org/licenses/by/3.0/"
+               title="Creative Commons ">Creative Commons "by"
+      license</a></em>: <a href="http://sachachua.com/blog/2013/05/how-to-learn-emacs-a-hand-drawn-one-pager-for-beginners/">How
+      to Learn Emacs: A Hand-drawn One-pager for Beginners</a>:
+      <a href="img/How-to-Learn-Emacs-v2-Large.png" title="How to
+                                                           Learn Emacs">
+        <img src="img/How-to-Learn-Emacs-v2-thumb.jpg" alt="How to
+                                                            Learn Emacs" class="howto"/>
+      </a>
+
+
+      <blockquote>
+        You can also check out these other visual guides:
+        <ul>
+          <li>
+            <a href="http://sachachua.com/blog/2013/09/how-to-learn-emacs-keyboard-shortcuts-a-visual-tutorial-for-newbies/"
+               title="How to learn Emacs keyboard shortcuts">
+              How to learn Emacs keyboard shortcuts (a visual tutorial
+              for newbies)
+            </a>
+          </li>
+          <li>
+            <a href="http://sachachua.com/blog/2014/01/tips-learning-org-mode-emacs/"
+               title="Some tips for learning Org Mode for Emacs">
+              Some tips for learning Org Mode for Emacs
+            </a>
+          </li>
+        </ul>
+      </blockquote>
+    </p>
+  </div>
+</section>
+<section class="darkGrey">
+  <span id="resources" ></span>
+  <div>
+    <h2>Resources</h2>
+    <p>
+      Emacs is used by very happy hackers all around the globe. Lots of
+      them are willing to help you get started or share the path
+      they've walked along Emacs with you. It's dangerous to go alone;
+      take this:
+      <ul>
+        <li>
+          <a href="http://www.gnu.org/software/emacs/manual/html_node/emacs/index.html"
+             title="The Emacs Manual">The Emacs Manual</a>&nbsp;&mdash; Official GNU
+          Emacs manual. See more
+          manuals <a href="http://www.gnu.org/software/emacs/manual/">here</a>.
+        </li>
+        <li>
+          <a href="http://www.emacswiki.org/" title="EmacsWiki">Emacs
+            Wiki</a>&nbsp;&mdash; a collection of useful information regarding Emacs and
+          Emacs Lisp, its extension language.
+        </li>
+        <li>
+          <a href="https://planet.emacslife.com/" title="Planet Emacsen">
+            Planet Emacsen</a>&nbsp;&mdash; An Emacs planet collecting
+          posts from many Emacs blogs.
+        </li>
+        <li>
+          <a href="http://www.masteringemacs.org/" title="Mastering
+                                                          Emacs">Mastering Emacs</a>&nbsp;&mdash; A blog about mastering the world's
+          best text editor.
+        </li>
+        <li>
+          <a href="http://emacsrocks.com/" title="Emacs Rocks">Emacs
+            Rocks</a>&nbsp;&mdash; a series of videos teaching about Emacs. Includes
+          a series on extending it.
+        </li>
+        <li>
+          <a href="http://whattheemacsd.com/" title="What the
+                                                     .emacs.d!?">What the .emacs.d!?</a>&nbsp;&mdash; Blog from the same
+          author as Emacs Rocks, about setting up your .emacs.d.
+        </li>
+        <li>
+          <a href="http://emacsmovies.org/" title="Emacs Movies">Emacs
+            Movies</a>&nbsp;&mdash; Tutorial screencasts for Emacs.
+        </li>
+        <li>
+          <a href="https://github.com/emacs-tw/awesome-emacs" title="Awesome Emacs">
+            Awesome Emacs</a>&nbsp;&mdash; A community driven list of useful Emacs packages, libraries and others.
+        </li>
+        <li>
+          <a href="http://reddit.com/r/emacs" title="Emacs Subreddit">/r/emacs</a>&nbsp;&mdash; Reddit is a virtual community of
+          (generally) very nice people. You can create an account there
+          and share your questions, progress and snippets about Emacs on
+          the Emacs subreddit.
+        </li>
+        <li>
+          <a href="http://emacs.stackexchange.com/" title="Emacs Stackexchange">Emacs StackExchange</a>&nbsp;&mdash; Q&A site for those using, extending or developing emacs.
+        </li>
+        <li>
+          <a href="https://github.com/syl20bnr/spacemacs#introduction">Spacemacs</a>&nbsp;&mdash; An Emacs distribution, uses Evil Mode to combine the ergonomic editing features of Vim with the extensibility of Emacs.
+        <li>
+      </ul>
+    </p>
+  </div>
+</section>
+<section id="be-free" class="green">
+  <span id="resources" ></span>
+  <div class="code">
+    be free.
+  </div>
+</section>
+
+
+        <section id="footer" class="black">
+          <div>
+            Website created
+            by <a href="http://fernandobriano.com">picandocodigo</a>,
+            design
+            by <a href="https://github.com/missmerilu">missmerilu</a>,
+            contributions by
+            <a href="https://github.com/picandocodigo/emacs.sexy/graphs/contributors">awesome people</a>.
+            This is a work in progress, please help improve it by forking
+            it <a href="https://github.com/picandocodigo/emacs.sexy">on
+            GitHub</a>.
+          </div>
+        </section>
+      </main>
+      <script src="js/smoothscroll.js"></script>
+      <script type="text/javascript" src="/js/retina.js"></script>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-2107177-12', 'emacs.sexy');
+        ga('send', 'pageview');
+
+
+      </script>
+  </body>
+</html>
+<!-- Ctrl X Ctrl S -->
+<!-- Ctrl X Ctrl C -->
