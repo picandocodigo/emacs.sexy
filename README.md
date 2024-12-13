@@ -1,7 +1,7 @@
 # Emacs.sexy
 
 Simple website to share the love for Emacs:
-[emacs.sexy](http://emacs.sexy)
+[emacs.sexy](https://emacs.sexy)
 
 To run it on local:
 ```bash
